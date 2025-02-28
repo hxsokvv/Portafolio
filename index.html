@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Nicolás Ortiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nicolás</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/me.png" alt="Foto de perfil de Nicolás Ortiz">
+            </div>
+            <h1>Nicolás Ortiz Díaz</h1>
+            <h2>Ingeniero Informático</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/nicolas-ortiz-56a32821b/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nicolás Ortiz.</span>
+                Ingeniero en Computación e Informática con experiencia en desarrollo de software, gestión de bases de datos y automatización de procesos. 
+                He colaborado en proyectos de implementación y configuración de Salesforce en entornos bancarios, 
+                aplicando metodologías ágiles (Scrum, Kanban) para optimizar flujos operativos. 
+                Me interesa desempeñarme en áreas de tecnología e innovación en empresas del sector financiero y tecnológico.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 55112483
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nicolasortizdiaz@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            El Bosque, Santiago-Chile
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="Files/CV_NicolasOrtiz.pdf" download="CV_NicolasOrtiz">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Técnicas</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso html">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Computación e Informática</h4>
+                        <span class="casa">Universidad Andrés Bello</span>
+                        <span class="fecha">2025 (En proceso de titulación)</span>
+                        <p>Actualmente me encuentro en proceso de titulación (2025) de la carrera de Ingeniería en Computación e Informática en la Universidad Andrés Bello. Durante mi formación académica, he consolidado una base técnica integral en áreas como desarrollo de software, gestión de bases de datos, automatización de procesos y programación en lenguajes como Python, Java y JavaScript (React). Mi educación ha combinado teoría y práctica, permitiéndome aplicar conocimientos en entornos reales, como proyectos de implementación de Salesforce en el sector bancario, donde optimicé flujos operativos y reduje tiempos de respuesta en un 20% mediante soluciones innovadoras.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Ingeniero en Práctica - Salesforce Developer</h4>
+                        <span class="casa">Banco BICE</span>
+                        <span class="fecha">Enero 2024 - Agosto 2024</span>
+                        <p><p>
+                            Como Ingeniero en Práctica en el área tecnológica del Banco BICE, participé activamente en proyectos críticos para optimizar procesos internos del Contact Center. Mis responsabilidades y logros incluyeron:<br><br>
+                            <strong>Implementación y configuración de Salesforce:</strong><br>
+                            Lideré la adaptación de la plataforma Salesforce para el equipo de Contact Center, integrando módulos de gestión de casos, automatización de respuestas y seguimiento de incidencias. Esto permitió centralizar la información y mejorar la visibilidad de las operaciones en tiempo real.<br><br>
+                            <strong>Diseño de flujos de trabajo:</strong><br>
+                            Desarrollé flujos automatizados (utilizando Salesforce Flow) para agilizar el registro de incidencias y asignar tareas de manera inteligente al personal correspondiente. Esto redujo errores manuales y garantizó un seguimiento más eficiente de cada caso.<br><br>
+                            <strong>Reconfiguración del sistema de soporte:</strong><br>
+                            Rediseñé la arquitectura de soporte técnico, priorizando la categorización de incidencias según urgencia y tipo. Como resultado, reduje el tiempo de respuesta en un 20%, mejorando la satisfacción de usuarios internos y clientes finales.<br><br>
+                            <strong>Trabajo con metodologías ágiles:</strong><br>
+                            Colaboré en un entorno Scrum, participando en sprints semanales, daily meetings y retrospectivas. Utilicé Kanban para gestionar tareas en Jira, lo que facilitó la priorización de actividades y la transparencia en el avance del proyecto.<br><br>
+                            <strong>Habilidades técnicas aplicadas:</strong><br>
+                            Uso de SQL para extraer y analizar datos históricos de incidencias, identificando patrones y proponiendo mejoras.<br>
+                            Integración de APIs externas con Salesforce para sincronizar datos entre sistemas del banco.<br>
+                            Colaboración con equipos multidisciplinarios (desarrolladores, analistas funcionales y stakeholders) para alinear soluciones técnicas con necesidades operativas.<br><br>
+                            <strong>Impacto y aprendizaje:</strong><br>
+                            Esta experiencia me permitió consolidar habilidades en gestión de proyectos tecnológicos, resolución de problemas bajo presión y comunicación efectiva con equipos no técnicos. Además, reforcé mi capacidad para traducir requerimientos empresariales en soluciones técnicas escalables, siempre con enfoque en la optimización de procesos y la experiencia del usuario.
+                        </p>
+                        .</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item der">
+                        <h4>InnoFund - Plataforma de Crowdfunding</h4>
+                        <span class="casa">Proyecto Personal</span>
+                        <span class="fecha">Enero 2024 - Diciembre 2024</span>
+                        <p>
+                            InnoFund es una plataforma web de crowdfunding diseñada para conectar emprendedores con inversionistas. <br>
+                            Su objetivo es facilitar la financiación de proyectos innovadores mediante una comunidad digital en la que los emprendedores <br>
+                            pueden publicar sus ideas y recibir apoyo económico de personas interesadas en invertir.<br><br>
+                            <strong>Características principales:</strong><br>
+                            Registro e inicio de sesión con autenticación mediante Firebase.<br>
+                            Creación y gestión de perfiles para emprendedores e inversionistas.<br>
+                            Publicación de proyectos con imágenes, descripciones y metas de financiamiento.<br>
+                            Implementación de métodos de pago como PayPal y MercadoPago Checkout Pro.<br>
+                            Sistema de comentarios y seguimiento de proyectos.<br>
+                            Barra de búsqueda avanzada para encontrar proyectos según categorías.<br>
+                            Diseño responsivo y accesible para una experiencia de usuario optimizada.<br><br>
+                            <strong>Tecnologías utilizadas:</strong><br>
+                            Frontend: React.js<br>
+                            Backend y Base de Datos: Firebase (Firestore, Authentication, Storage)<br>
+                            Pasarelas de Pago: PayPal y MercadoPago<br>
+                            Despliegue: Vercel
+                        </p>
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/hxsokvv/InnoFund" target="_blank">
+                        <img src="img/DALL·E 2023-12-15 11.04.05 cloud.png" alt="Proyecto InnoFund">
+                        <div class="overlay">
+                            <h3>InnoFund</h3>
+                            <p>Plataforma de crowdfunding desarrollada con React.js y Firebase</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="https://formspree.io/f/xgegwaeg" method="POST" class="col">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="tel" name="numero" placeholder="Número telefónico">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="text" name="tema" placeholder="Asunto">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <!-- Info Contacto -->
+                <div class="col">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: +569 55112483
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nicolasortizdiaz@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/nicolas-ortiz-56a32821b/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
